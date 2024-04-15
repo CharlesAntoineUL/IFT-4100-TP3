@@ -1,0 +1,169 @@
+{
+  "contractName": "contrat",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/TP3.sol\":\"contrat\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/TP3.sol\":{\"keccak256\":\"0x1adc08a51271c6292d07e44625cba68fb72f22fce7762dcab5e1eeeec4d2375f\",\"urls\":[\"bzz-raw://100fd97b5c9aa8efe5ad6a4f7526873103077e14665f353c16da2f4497f86968\",\"dweb:/ipfs/QmYn4NC7pVQhU1XikcL7wpFNwnvUwZJr7k41BCVbEHMugt\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600e575f80fd5b50603e80601a5f395ff3fe60806040525f80fdfea264697066735822122042c685493e3b7d2718aabc3bf6d933ff0a43b3059584be91e5157187b0c64c9d64736f6c63430008150033",
+  "deployedBytecode": "0x60806040525f80fdfea264697066735822122042c685493e3b7d2718aabc3bf6d933ff0a43b3059584be91e5157187b0c64c9d64736f6c63430008150033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "27:112:0:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "27:112:0:-:0;;;;;",
+  "source": "pragma solidity = 0.8.21;\n\ncontract contrat {\n    struct Item {\n        uint id;\n        string description;\n        bool isRented;\n    }\n}",
+  "sourcePath": "/Users/charles-antoinegaudreault/Library/CloudStorage/OneDrive-UniversitéLaval/cours/H24/IFT-4100/TP3/contracts/TP3.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/TP3.sol",
+    "exportedSymbols": {
+      "contrat": [
+        9
+      ]
+    },
+    "id": 10,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".21"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:25:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "contrat",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 9,
+        "linearizedBaseContracts": [
+          9
+        ],
+        "name": "contrat",
+        "nameLocation": "36:7:0",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "contrat.Item",
+            "id": 8,
+            "members": [
+              {
+                "constant": false,
+                "id": 3,
+                "mutability": "mutable",
+                "name": "id",
+                "nameLocation": "77:2:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 8,
+                "src": "72:7:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "72:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5,
+                "mutability": "mutable",
+                "name": "description",
+                "nameLocation": "96:11:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 8,
+                "src": "89:18:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 4,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "89:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7,
+                "mutability": "mutable",
+                "name": "isRented",
+                "nameLocation": "122:8:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 8,
+                "src": "117:13:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 6,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "117:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Item",
+            "nameLocation": "57:4:0",
+            "nodeType": "StructDefinition",
+            "scope": 9,
+            "src": "50:87:0",
+            "visibility": "public"
+          }
+        ],
+        "scope": 10,
+        "src": "27:112:0",
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "src": "0:139:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.21+commit.d9974bed.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2024-04-15T16:12:06.710Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
