@@ -33,7 +33,7 @@ contract CarRental {
         owner = msg.sender;
     }
 
-    function addCar(string memory _brand, string memory _model, string memory _yearOfConstruction, uint _rentalPricePerDay) public onlyOwner {
+    function addCar(string memory _brand, string memory _model, string memory _yearOfConstruction, uint _rentalPricePerDay) public {
         uint carId = carCount++;
         cars[carId] = Car(carId, msg.sender, _brand, _model, _yearOfConstruction, _rentalPricePerDay, false);
         emit CarAdded(carId, _brand, _model, _yearOfConstruction);
@@ -41,8 +41,6 @@ contract CarRental {
 
     function rentCar(uint _carId, uint _numDays) public payable {
         Car storage car = cars[_carId];
-        require(!car.isRented, unicode"L'auto est déjà loué");
-        require(msg.value == car.rentalPricePerDay * _numDays * 2, unicode"La valeur entrée est incorrecte");
 
         carRenters[_carId] = msg.sender;
         deposits[msg.sender] = msg.value;
