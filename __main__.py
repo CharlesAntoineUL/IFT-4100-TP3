@@ -1,5 +1,4 @@
 from web3 import Web3
-from getpass import getpass
 import json
 
 ganache_url = "http://127.0.0.1:7545"
@@ -8,7 +7,8 @@ web3 = Web3(Web3.HTTPProvider(ganache_url))
 with open('./build/contracts/CarRental.json', 'r') as file:
     contract_data  = json.load(file)
 abi = contract_data['abi']
-contract_address = Web3.to_checksum_address('0x73417e58d378f5fa36399d83100d9f5fd2cdb68a') # Pas trouvé comment incrire cette info dynamiquement
+# Inscrire ici l'adresse du contrat déployé localement sur votre machine
+contract_address = Web3.to_checksum_address('0x89e3799102447220ef3917e5315720d2007442da')
 
 contract = web3.eth.contract(address=contract_address, abi=abi)
 print("Login to your account. ")
